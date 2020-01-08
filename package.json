@@ -19,5 +19,8 @@
   "homepage": "https://github.com/DulceOne/test-heroku#readme",
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "scripts": {
+    "start": "node index.js"
   }
 }

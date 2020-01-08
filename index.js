@@ -5,7 +5,7 @@ app.get('/', (req,res) => {
     res.end('<h1>Hello world!!!</h1>')
 })
 
-app.pos('/test', (req, res) => {
+app.post('/test', (req, res) => {
     res.send({message: 'work pls'});
 })
 

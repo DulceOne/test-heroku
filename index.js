@@ -9,4 +9,6 @@ app.post('/test', (req, res) => {
     res.send({message: 'work pls'});
 })
 
-app.listen(3000)
+app.listen(3000, () => {
+    console.log("SERVER IS STARTED...")
+})

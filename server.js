@@ -5,6 +5,7 @@ const http = require('http').Server(app);
 const io = require('socket.io')(http);
 const mongoose = require('mongoose');
 const db = require('./db');
+const port = process.env.PORT || 9000;
 const cors = require('cors');
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json({ extended: true }))
@@ -54,6 +55,6 @@ app.post('/api/v1/order/list', (req, res) => {
 
 
 
-http.listen(9000, () => {
+http.listen(port, () => {
     console.log('Server started on port 9000');
 });
